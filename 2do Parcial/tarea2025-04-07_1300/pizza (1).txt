@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int opcion, ingrediente;
+    char tipo_pizza[20];
+
+    printf("¿Quiere una pizza vegetariana? (1) Sí, (2) No: ");
+    scanf("%d", &opcion);
+
+    if (opcion == 1) {
+        printf("Pizza vegetariana\n");
+        printf("Ingredientes disponibles:\n");
+        printf("1. Pimiento\n");
+        printf("2. Tofu\n");
+        scanf("%d", &ingrediente);
+
+        if (ingrediente == 1) {
+            printf("Pizza vegetariana con pimiento, mozzarella y tomate\n");
+        } else if (ingrediente == 2) {
+            printf("Pizza vegetariana con tofu, mozzarella y tomate\n");
+        }
+    } else if (opcion == 2) {
+        printf("Pizza no vegetariana\n");
+        printf("Ingredientes disponibles:\n");
+        printf("1. Peperoni\n");
+        printf("2. Jamón\n");
+        printf("3. Salmón\n");
+        scanf("%d", &ingrediente);
+
+        if (ingrediente == 1) {
+            printf("Pizza no vegetariana con peperoni, mozzarella y tomate\n");
+        } else if (ingrediente == 2) {
+            printf("Pizza no vegetariana con jamón, mozzarella y tomate\n");
+        } else if (ingrediente == 3) {
+            printf("Pizza no vegetariana con salmón, mozzarella y tomate\n");
+        }
+    }
+
+    return 0;
+}
