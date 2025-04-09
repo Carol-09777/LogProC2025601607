@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ACT1"/>
+        <attribute name="authors" value="Carol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 04:51:31 p. m."/>
+        <attribute name="created" value="Q2Fyb2w7REVTS1RPUC1JTEIySzhMOzIwMjUtMDQtMDk7MDQ6NDQ6MDUgcC4gbS47MzAyMw=="/>
+        <attribute name="edited" value="Q2Fyb2w7REVTS1RPUC1JTEIySzhMOzIwMjUtMDQtMDk7MDQ6NTE6MzEgcC4gbS47MTszMTI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            <assign variable="z" expression="1"/>
+            <assign variable="y" expression="1"/>
+            <output expression="&quot;escribir el numero&quot;" newline="True"/>
+            <input variable="x"/>
+            <while expression="z&lt;=x">
+                <assign variable="y" expression="y*1"/>
+                <assign variable="z" expression="z+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

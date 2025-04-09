@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ACT2"/>
+        <attribute name="authors" value="Carol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 05:14:16 p. m."/>
+        <attribute name="created" value="Q2Fyb2w7REVTS1RPUC1JTEIySzhMOzIwMjUtMDQtMDk7MDU6MDU6NDcgcC4gbS47MzAyNw=="/>
+        <attribute name="edited" value="Q2Fyb2w7REVTS1RPUC1JTEIySzhMOzIwMjUtMDQtMDk7MDU6MTQ6MTYgcC4gbS47MTszMTMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, x, y, z, numero" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="0"/>
+            <assign variable="y" expression="0"/>
+            <assign variable="z" expression="1"/>
+            <output expression="&quot;Escribe el numero que vas a convertir fibonacci&quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <assign variable="z" expression="x+y"/>
+                <assign variable="x" expression="y"/>
+                <assign variable="y" expression="z"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
